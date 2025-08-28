@@ -48,20 +48,19 @@ Um aplicativo elegante e funcional para gerenciar sua lista de produtos de maqui
 3. Para remover um produto individual, clique no "✖" ao lado do nome
 4. Para limpar toda a lista, use o botão "Limpar Tudo"
 
-## 💻 Código
+## 📥 Como Clonar
 
-O aplicativo utiliza diversas técnicas modernas de desenvolvimento:
+Deseja experimentar este aplicativo? Siga estas etapas:
 
-```javascript
-// Exemplo de uso do AsyncStorage para persistência
-const salvarTarefa = async () => {
-  if (tarefa.trim() === '') {
-    alert('Digite um produto primeiro');
-    return;
-  }
-  const novaListaTarefas = [...tarefas, tarefa];
-  setTarefas(novaListaTarefas);
-  await AsyncStorage.setItem('tarefas', novaListaTarefas.join(','));
-  setTarefa('');
-  alert('Produto adicionado com sucesso');
-};
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/meu-app-storage.git
+
+# Navegue até o diretório do projeto
+cd meu-app-storage
+
+# Instale as dependências
+npm install
+
+# Execute o aplicativo
+npm start
